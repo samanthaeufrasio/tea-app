@@ -6,8 +6,6 @@
 //
 
 import Foundation
-import Foundation
-
 
 var teas: [Tea] = load("teaData.json")
 

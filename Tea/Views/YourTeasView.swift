@@ -29,7 +29,7 @@ struct YourTeasView: View {
                     TeaItem(tea: tea)
                 }
             }.listStyle(.inset)
-                .navigationTitle("Seus Chás")
+            .navigationTitle("Seus Chás")
         }
     }
 }
