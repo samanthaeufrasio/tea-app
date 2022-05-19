@@ -1,0 +1,39 @@
+[
+    {
+         "name": "Chá Verde",
+         "type": "Camellia sinensis",
+         "description": "A bebida é repleta de propriedades nutricionais que ajudam a prevenir doenças e deixam o organismo mais fortalecido. A planta possui grande quantidade de antioxidantes, cafeína, aminoácidos, vitaminas B, E, C, cálcio, magnésio, zinco, potássio e ferro que proporcionam mais saúde.",
+         "instruction": "Ingredientes:\n200 ml de água\nUma colher de sopa (2g) de folhinhas de chá verde \n\nModo de preparo:\nColoque 200 ml de água em uma chaleira no fogo baixo e desligue antes de começar a ferver, assim que subirem as primeiras bolhinhas\nJogue a água quente sobre a quantidade de 1 colher de sopa da erva (2g) em uma xícara\nCubra deixando em infusão por 3 minutos\nCoe e beba.",
+         "sensation": "Focar",
+         "cure": "Indisposiçao",
+         "id": 1001,
+         "contraindication": "O consumo excessivo de chá verde pode trazer efeitos colaterais como insônia e dores de cabeça. Lembrando que gestantes, idosos, pessoas com problemas cardíacos e com tendência à insônia devem ter um cuidado ainda maior no momento de inserir o chá verde na sua rotina.",
+         "imageName": "icongreentea",
+         "isFavorite": false
+        
+    },
+    {
+        "name": "Chá de Canela",
+        "type": "Infusão de Especiarias",
+        "description": "A canela, além de anti-inflamatória, é um antiespasmódico natural. Auxilia na diminuição das contrações e também da náusea, outro sintoma comum no período menstrual.",
+        "instruction": "Ingredientes:\n1 Canela em pau\n250ml de água\n\nModo de preparo:\nAdicione a canela em pau em uma chaleira ou panela com a água e ferver por 10 a 15 minutos.",
+        "sensation": "Relaxar",
+        "cure": "Colica",
+        "id": 1002,
+        "contraindication": "A canela não deve ser consumida por mulheres que estejam grávidas ou amamentando, Essa especiaria também é contraindicada para pessoas com úlceras ou que possuem doenças graves do fígado.",
+        "imageName": "iconredtea",
+        "isFavorite": false
+    },
+    {
+        "name": "Chá de Camomila",
+        "type": "Infusão de Ervas",
+         "description": "Entre as propriedades do chá, estão os compostos fenólicos e ácidos orgânicos, ácidos fenólicos, flavonoides, polifenóis e óleos essenciais. São eles os responsáveis por conferir os efeitos terapêuticos, em especial, de atividade antioxidante e anti-inflamatória.",
+         "instruction": "Ingredientes:\n2 colheres de chá de flores secas de camomila\n250ml de água\n\nModo de preparo:\nAdicionar as flores de camomila na água fervente, tampar e deixar repousar por 10 minutos. A seguir, coar e beber de 3 a 4 xícaras deste chá por dia.",
+         "sensation": "Relaxar",
+         "cure": "Enjoo",
+         "id": 1003,
+         "contraindication": "Não é indicado o uso do chá de camomila durante o processo gestacional, especialmente no primeiro trimestre, podendo ocorrer desde abortos espontâneos e malformações congênitas.",
+         "imageName": "iconyellowtea",
+         "isFavorite": true
+         }
+]

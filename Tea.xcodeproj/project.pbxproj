@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98041A88282AEF6A0057A84F /* TeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98041A87282AEF6A0057A84F /* TeaApp.swift */; };
+		98041A8A282AEF6A0057A84F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98041A89282AEF6A0057A84F /* ContentView.swift */; };
+		98041A8C282AEF6B0057A84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98041A8B282AEF6B0057A84F /* Assets.xcassets */; };
+		98041A8F282AEF6B0057A84F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98041A8E282AEF6B0057A84F /* Preview Assets.xcassets */; };
+		98041A99282AEF6C0057A84F /* TeaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98041A98282AEF6C0057A84F /* TeaTests.swift */; };
+		98041AA3282AEF6C0057A84F /* TeaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98041AA2282AEF6C0057A84F /* TeaUITests.swift */; };
+		98041AA5282AEF6C0057A84F /* TeaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98041AA4282AEF6C0057A84F /* TeaUITestsLaunchTests.swift */; };
+		98041AB2282D2F630057A84F /* RecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98041AB1282D2F630057A84F /* RecommendationsView.swift */; };
+		98041AB4282D2F920057A84F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98041AB3282D2F920057A84F /* SearchView.swift */; };
+		98041AB6282D2F9E0057A84F /* YourTeasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98041AB5282D2F9E0057A84F /* YourTeasView.swift */; };
+		982C2C252833C304009417AC /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982C2C242833C304009417AC /* Tea.swift */; };
+		988EAADC283430090013925B /* TeaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988EAADB283430090013925B /* TeaItem.swift */; };
+		988EAAE32835385F0013925B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988EAAE22835385F0013925B /* ModelData.swift */; };
+		988EAAE72835398F0013925B /* teaData.json in Resources */ = {isa = PBXBuildFile; fileRef = 988EAAE62835398F0013925B /* teaData.json */; };
+		988EAAE928355A1F0013925B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988EAAE828355A1F0013925B /* TestView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98041A95282AEF6C0057A84F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98041A7C282AEF6A0057A84F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98041A83282AEF6A0057A84F;
+			remoteInfo = Tea;
+		};
+		98041A9F282AEF6C0057A84F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98041A7C282AEF6A0057A84F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98041A83282AEF6A0057A84F;
+			remoteInfo = Tea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98041A84282AEF6A0057A84F /* Tea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98041A87282AEF6A0057A84F /* TeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaApp.swift; sourceTree = "<group>"; };
+		98041A89282AEF6A0057A84F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		98041A8B282AEF6B0057A84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98041A8E282AEF6B0057A84F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		98041A94282AEF6C0057A84F /* TeaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98041A98282AEF6C0057A84F /* TeaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaTests.swift; sourceTree = "<group>"; };
+		98041A9E282AEF6C0057A84F /* TeaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98041AA2282AEF6C0057A84F /* TeaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaUITests.swift; sourceTree = "<group>"; };
+		98041AA4282AEF6C0057A84F /* TeaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		98041AB1282D2F630057A84F /* RecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsView.swift; sourceTree = "<group>"; };
+		98041AB3282D2F920057A84F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		98041AB5282D2F9E0057A84F /* YourTeasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourTeasView.swift; sourceTree = "<group>"; };
+		982C2C242833C304009417AC /* Tea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
+		988EAADB283430090013925B /* TeaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaItem.swift; sourceTree = "<group>"; };
+		988EAAE22835385F0013925B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		988EAAE62835398F0013925B /* teaData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teaData.json; sourceTree = "<group>"; };
+		988EAAE828355A1F0013925B /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98041A81282AEF6A0057A84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98041A91282AEF6C0057A84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98041A9B282AEF6C0057A84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98041A7B282AEF6A0057A84F = {
+			isa = PBXGroup;
+			children = (
+				98041A86282AEF6A0057A84F /* Tea */,
+				98041A97282AEF6C0057A84F /* TeaTests */,
+				98041AA1282AEF6C0057A84F /* TeaUITests */,
+				98041A85282AEF6A0057A84F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98041A85282AEF6A0057A84F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98041A84282AEF6A0057A84F /* Tea.app */,
+				98041A94282AEF6C0057A84F /* TeaTests.xctest */,
+				98041A9E282AEF6C0057A84F /* TeaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98041A86282AEF6A0057A84F /* Tea */ = {
+			isa = PBXGroup;
+			children = (
+				98041A87282AEF6A0057A84F /* TeaApp.swift */,
+				98041AB7282E85750057A84F /* Views */,
+				98041AB8282E857D0057A84F /* Model */,
+				988EAAE0283533EE0013925B /* Resources */,
+				98041A8B282AEF6B0057A84F /* Assets.xcassets */,
+				98041A8D282AEF6B0057A84F /* Preview Content */,
+			);
+			path = Tea;
+			sourceTree = "<group>";
+		};
+		98041A8D282AEF6B0057A84F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				98041A8E282AEF6B0057A84F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98041A97282AEF6C0057A84F /* TeaTests */ = {
+			isa = PBXGroup;
+			children = (
+				98041A98282AEF6C0057A84F /* TeaTests.swift */,
+			);
+			path = TeaTests;
+			sourceTree = "<group>";
+		};
+		98041AA1282AEF6C0057A84F /* TeaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98041AA2282AEF6C0057A84F /* TeaUITests.swift */,
+				98041AA4282AEF6C0057A84F /* TeaUITestsLaunchTests.swift */,
+			);
+			path = TeaUITests;
+			sourceTree = "<group>";
+		};
+		98041AB7282E85750057A84F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98041A89282AEF6A0057A84F /* ContentView.swift */,
+				98041AB1282D2F630057A84F /* RecommendationsView.swift */,
+				98041AB5282D2F9E0057A84F /* YourTeasView.swift */,
+				98041AB3282D2F920057A84F /* SearchView.swift */,
+				988EAADB283430090013925B /* TeaItem.swift */,
+				988EAAE828355A1F0013925B /* TestView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98041AB8282E857D0057A84F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				982C2C242833C304009417AC /* Tea.swift */,
+				988EAAE22835385F0013925B /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		988EAAE0283533EE0013925B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				988EAAE62835398F0013925B /* teaData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98041A83282AEF6A0057A84F /* Tea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98041AA8282AEF6C0057A84F /* Build configuration list for PBXNativeTarget "Tea" */;
+			buildPhases = (
+				98041A80282AEF6A0057A84F /* Sources */,
+				98041A81282AEF6A0057A84F /* Frameworks */,
+				98041A82282AEF6A0057A84F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tea;
+			productName = Tea;
+			productReference = 98041A84282AEF6A0057A84F /* Tea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98041A93282AEF6C0057A84F /* TeaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98041AAB282AEF6C0057A84F /* Build configuration list for PBXNativeTarget "TeaTests" */;
+			buildPhases = (
+				98041A90282AEF6C0057A84F /* Sources */,
+				98041A91282AEF6C0057A84F /* Frameworks */,
+				98041A92282AEF6C0057A84F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98041A96282AEF6C0057A84F /* PBXTargetDependency */,
+			);
+			name = TeaTests;
+			productName = TeaTests;
+			productReference = 98041A94282AEF6C0057A84F /* TeaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98041A9D282AEF6C0057A84F /* TeaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98041AAE282AEF6C0057A84F /* Build configuration list for PBXNativeTarget "TeaUITests" */;
+			buildPhases = (
+				98041A9A282AEF6C0057A84F /* Sources */,
+				98041A9B282AEF6C0057A84F /* Frameworks */,
+				98041A9C282AEF6C0057A84F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98041AA0282AEF6C0057A84F /* PBXTargetDependency */,
+			);
+			name = TeaUITests;
+			productName = TeaUITests;
+			productReference = 98041A9E282AEF6C0057A84F /* TeaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98041A7C282AEF6A0057A84F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					98041A83282AEF6A0057A84F = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					98041A93282AEF6C0057A84F = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 98041A83282AEF6A0057A84F;
+					};
+					98041A9D282AEF6C0057A84F = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 98041A83282AEF6A0057A84F;
+					};
+				};
+			};
+			buildConfigurationList = 98041A7F282AEF6A0057A84F /* Build configuration list for PBXProject "Tea" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98041A7B282AEF6A0057A84F;
+			productRefGroup = 98041A85282AEF6A0057A84F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98041A83282AEF6A0057A84F /* Tea */,
+				98041A93282AEF6C0057A84F /* TeaTests */,
+				98041A9D282AEF6C0057A84F /* TeaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98041A82282AEF6A0057A84F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98041A8F282AEF6B0057A84F /* Preview Assets.xcassets in Resources */,
+				98041A8C282AEF6B0057A84F /* Assets.xcassets in Resources */,
+				988EAAE72835398F0013925B /* teaData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98041A92282AEF6C0057A84F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98041A9C282AEF6C0057A84F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98041A80282AEF6A0057A84F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982C2C252833C304009417AC /* Tea.swift in Sources */,
+				98041AB4282D2F920057A84F /* SearchView.swift in Sources */,
+				98041AB6282D2F9E0057A84F /* YourTeasView.swift in Sources */,
+				98041A8A282AEF6A0057A84F /* ContentView.swift in Sources */,
+				98041A88282AEF6A0057A84F /* TeaApp.swift in Sources */,
+				988EAAE32835385F0013925B /* ModelData.swift in Sources */,
+				988EAAE928355A1F0013925B /* TestView.swift in Sources */,
+				98041AB2282D2F630057A84F /* RecommendationsView.swift in Sources */,
+				988EAADC283430090013925B /* TeaItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98041A90282AEF6C0057A84F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98041A99282AEF6C0057A84F /* TeaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98041A9A282AEF6C0057A84F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98041AA3282AEF6C0057A84F /* TeaUITests.swift in Sources */,
+				98041AA5282AEF6C0057A84F /* TeaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98041A96282AEF6C0057A84F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98041A83282AEF6A0057A84F /* Tea */;
+			targetProxy = 98041A95282AEF6C0057A84F /* PBXContainerItemProxy */;
+		};
+		98041AA0282AEF6C0057A84F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98041A83282AEF6A0057A84F /* Tea */;
+			targetProxy = 98041A9F282AEF6C0057A84F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		98041AA6282AEF6C0057A84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98041AA7282AEF6C0057A84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98041AA9282AEF6C0057A84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tea/Preview Content\"";
+				DEVELOPMENT_TEAM = 8DK9849PTW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learning.Tea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98041AAA282AEF6C0057A84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tea/Preview Content\"";
+				DEVELOPMENT_TEAM = 8DK9849PTW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learning.Tea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98041AAC282AEF6C0057A84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learning.TeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tea.app/Tea";
+			};
+			name = Debug;
+		};
+		98041AAD282AEF6C0057A84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learning.TeaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tea.app/Tea";
+			};
+			name = Release;
+		};
+		98041AAF282AEF6C0057A84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learning.TeaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tea;
+			};
+			name = Debug;
+		};
+		98041AB0282AEF6C0057A84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = learning.TeaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tea;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98041A7F282AEF6A0057A84F /* Build configuration list for PBXProject "Tea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98041AA6282AEF6C0057A84F /* Debug */,
+				98041AA7282AEF6C0057A84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98041AA8282AEF6C0057A84F /* Build configuration list for PBXNativeTarget "Tea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98041AA9282AEF6C0057A84F /* Debug */,
+				98041AAA282AEF6C0057A84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98041AAB282AEF6C0057A84F /* Build configuration list for PBXNativeTarget "TeaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98041AAC282AEF6C0057A84F /* Debug */,
+				98041AAD282AEF6C0057A84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98041AAE282AEF6C0057A84F /* Build configuration list for PBXNativeTarget "TeaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98041AAF282AEF6C0057A84F /* Debug */,
+				98041AB0282AEF6C0057A84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98041A7C282AEF6A0057A84F /* Project object */;
+}
