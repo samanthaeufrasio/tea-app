@@ -13,7 +13,11 @@ struct TestView: View {
     var tea: Tea
     
     var body: some View {
-        Text(tea.name)
+        NavigationView{
+            Text(tea.name)
+                .font(.title)
+                .navigationTitle(tea.name)
+        }
     }
 }
 
