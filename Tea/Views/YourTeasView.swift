@@ -9,33 +9,34 @@ import SwiftUI
 
 struct YourTeasView: View {
     
-    var tea: Tea
-    
-    @State private var showingSheet: Bool = false
-    @State private var showFavoritesOnly = false
+    @ObservedObject var modelData: ModelData
+    @State private var showFavoritesOnly = true
     
     var filteredTeas: [Tea]{
-        teas.filter { tea in
+        modelData.teas.filter { tea in
             (!showFavoritesOnly || tea.isFavorite)
         }
     }
     var body: some View {
-        
         NavigationView {
-            List (filteredTeas) { tea in
-                NavigationLink{
-                    TestView(tea: tea)
-                } label: {
-                    TeaItem(tea: tea)
+            List {
+                ForEach(filteredTeas) { tea in
+                    NavigationLink{
+                        TestView(modelData: modelData, tea: tea)
+                    } label: {
+                        TeaItem(tea: tea)
+                    }
                 }
-            }.listStyle(.inset)
-            .navigationTitle("Seus Chás")
+            }
+            .listStyle(.sidebar)
+            .navigationTitle("Favoritos")
         }
     }
 }
 
-struct YourTeasView_Previews: PreviewProvider {
-    static var previews: some View {
-        YourTeasView(tea: teas[0])
-    }
-}
+//struct YourTeasView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        YourTeasView()
+//            .environmentObject(ModelData())
+//    }
+//}

@@ -9,24 +9,31 @@ import SwiftUI
 
 struct SearchView: View {
     
-    var tea: Tea
+    @ObservedObject var modelData: ModelData
+    @State private var searchText = ""
     
     var body: some View {
         NavigationView {
-            List (teas) { tea in
-                NavigationLink{
-                    TestView(tea: tea)
-                } label: {
-                    TeaItem(tea: tea)
+
+            List (modelData.teas) { tea in
+                    NavigationLink{
+                        TestView(modelData: modelData, tea: tea)
+                    } label: {
+                        TeaItem(tea: tea)
+                    }
+                    
                 }
-            }.listStyle(.inset)
-                .navigationTitle("Buscar")
-        }
-    }
-    
-    struct SearchView_Previews: PreviewProvider {
-        static var previews: some View {
-            SearchView(tea: teas[0])
-        }
+                .listStyle(.sidebar)
+                .navigationTitle("Chás")
+            }
+
     }
 }
+
+//struct SearchView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SearchView(tea: ModelData().teas[0])
+//            .environmentObject(ModelData())
+//    }
+//}
+

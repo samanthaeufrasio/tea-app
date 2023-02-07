@@ -6,8 +6,22 @@
 //
 
 import Foundation
+import Combine
+import SwiftUI
 
-var teas: [Tea] = load("teaData.json")
+final class ModelData: ObservableObject {
+    
+    @Published var teas: [Tea] = load("teaData.json")
+    
+    func toggle(tea: Tea) {
+        if let index = teas.firstIndex(of: tea) {
+            teas[index].isFavorite.toggle()
+            objectWillChange.send()
+        }
+    }
+
+}
+
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

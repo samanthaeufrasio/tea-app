@@ -22,6 +22,7 @@
 		988EAAE32835385F0013925B /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988EAAE22835385F0013925B /* ModelData.swift */; };
 		988EAAE72835398F0013925B /* teaData.json in Resources */ = {isa = PBXBuildFile; fileRef = 988EAAE62835398F0013925B /* teaData.json */; };
 		988EAAE928355A1F0013925B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988EAAE828355A1F0013925B /* TestView.swift */; };
+		988EAAEB28366FBC0013925B /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988EAAEA28366FBC0013925B /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		988EAAE22835385F0013925B /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		988EAAE62835398F0013925B /* teaData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = teaData.json; sourceTree = "<group>"; };
 		988EAAE828355A1F0013925B /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		988EAAEA28366FBC0013925B /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,8 @@
 				98041A87282AEF6A0057A84F /* TeaApp.swift */,
 				98041AB7282E85750057A84F /* Views */,
 				98041AB8282E857D0057A84F /* Model */,
+				988EAAED283671800013925B /* Teas */,
+				988EAAEC283671280013925B /* Helpers */,
 				988EAAE0283533EE0013925B /* Resources */,
 				98041A8B282AEF6B0057A84F /* Assets.xcassets */,
 				98041A8D282AEF6B0057A84F /* Preview Content */,
@@ -152,8 +156,6 @@
 				98041AB1282D2F630057A84F /* RecommendationsView.swift */,
 				98041AB5282D2F9E0057A84F /* YourTeasView.swift */,
 				98041AB3282D2F920057A84F /* SearchView.swift */,
-				988EAADB283430090013925B /* TeaItem.swift */,
-				988EAAE828355A1F0013925B /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +175,23 @@
 				988EAAE62835398F0013925B /* teaData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		988EAAEC283671280013925B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				988EAAEA28366FBC0013925B /* FavoriteButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		988EAAED283671800013925B /* Teas */ = {
+			isa = PBXGroup;
+			children = (
+				988EAADB283430090013925B /* TeaItem.swift */,
+				988EAAE828355A1F0013925B /* TestView.swift */,
+			);
+			path = Teas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +328,7 @@
 				982C2C252833C304009417AC /* Tea.swift in Sources */,
 				98041AB4282D2F920057A84F /* SearchView.swift in Sources */,
 				98041AB6282D2F9E0057A84F /* YourTeasView.swift in Sources */,
+				988EAAEB28366FBC0013925B /* FavoriteButton.swift in Sources */,
 				98041A8A282AEF6A0057A84F /* ContentView.swift in Sources */,
 				98041A88282AEF6A0057A84F /* TeaApp.swift in Sources */,
 				988EAAE32835385F0013925B /* ModelData.swift in Sources */,

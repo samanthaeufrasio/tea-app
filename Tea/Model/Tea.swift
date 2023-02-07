@@ -13,6 +13,7 @@ struct Tea: Hashable, Codable, Identifiable{
     var name: String
     var type: String
     var description: String
+    var ingredients: String
     var instruction: String
     var sensation: String
     var cure: String

@@ -20,24 +20,30 @@ struct TeaItem: View {
             VStack (alignment: .leading){
                 Text(tea.name)
                     .fontWeight(.bold)
+                
                 Text(tea.description)
                     .lineLimit(1)
                     .font(.caption)
                     .foregroundColor(.gray)
             }
             Spacer()
-            if tea.isFavorite{
+            
+            if tea.isFavorite {
                 Image(systemName: "heart.fill")
                     .foregroundColor(.red)
-            } else{
+            } /*else{
                 Image(systemName: "heart")
-            }
+                    .foregroundColor(.gray)
+            }*/
         }
         
     }
 }
 
 struct TeaItem_Previews: PreviewProvider {
+    
+    static var teas = ModelData().teas
+    
     static var previews: some View {
         Group{
             TeaItem(tea: teas[0])

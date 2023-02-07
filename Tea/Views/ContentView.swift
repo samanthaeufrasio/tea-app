@@ -8,32 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var modelData: ModelData
+    
     var body: some View {
             TabView{
-                RecommendationsView()
+                RecommendationsView(modelData: modelData)
                     .tabItem {
                         Label("Recomendações",
                               systemImage: "doc.text.image")
                     }
-                YourTeasView(tea: teas[0])
+                YourTeasView(modelData: modelData)
                     .tabItem {
-                        Label("Seus Chás",
-                              systemImage: "cup.and.saucer.fill")
+                        Label("Favoritos",
+                              systemImage: "heart.fill")
                     }
-                SearchView(tea: teas[0])
+                SearchView(modelData: modelData)
                     .tabItem {
-                        Label("Buscar",
-                              systemImage: "magnifyingglass")
+                        Label("Chás",
+                              systemImage: "cup.and.saucer")
                     }
             }
             .accentColor(.init(hue: 80 / 360, saturation: 0.7, brightness: 0.6))
     }
+    
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            ContentView()
-        }
-    }
-}
+//
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group {
+//            ContentView()
+//                .environmentObject(ModelData())
+//        }
+//    }
+//}
